@@ -23,6 +23,6 @@
 
 ### Scrapy
 
-- 使用 scrapy crawl spidername 命令启动蜘蛛，而不是运营 .py 文件
-- 执行 scrapy crawl spidername 命令时，终端应该在蜘蛛的项目目录下
+- 使用 scrapy crawl spidername 命令启动蜘蛛，而不是运行 .py 文件
+- 执行 scrapy crawl spidername 命令时，终端应在蜘蛛的项目目录下
 - Xpath 直接复制自源代码的路径容易出错，需自己按实际情况重新编写
