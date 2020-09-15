@@ -10,7 +10,7 @@ data.head(10)
 data['id']
  
 # 4. SELECT COUNT(id) FROM data;
-data['id'].size
+data['id'].size()
  
 # 5. SELECT * FROM data WHERE id<1000 AND age>30;
 data[(data['id'] < 1000) & (data['age'] >30)]
