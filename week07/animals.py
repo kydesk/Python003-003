@@ -15,7 +15,7 @@ class Animal(metaclass=ABCMeta):
     
     @property
     def is_fierce(self):
-        if (self.size_dict[self.size] >= "1" and self.ani_type == "食肉" and self.character == "凶猛"):
+        if (self.size_dict[self.size] >= '1' and self.ani_type == '食肉' and self.character == '凶猛'):
             return True
         else:
             return False
@@ -66,6 +66,5 @@ if __name__ == '__main__':
     if have_cat:
         print("动物园有猫")
 
-    z.add_animal(cat1)  # 重复添加同一只动物
 
 
