@@ -5,8 +5,6 @@ from abc import ABCMeta, abstractmethod
 # 动物类要求定义“类型”、“体型”、“性格”、“是否属于凶猛动物”四个属性，是否属于凶猛动物的判断标准是：“体型 >= 中等”并且是“食肉类型”同时“性格凶猛”。
 class Animal(metaclass=ABCMeta):
 
-    size_dict = {'小':0, '中等':1, '大':2}
-
     def __init__(self, name, ani_type, size, character):
         self.name = name
         self.ani_type = ani_type
@@ -15,7 +13,7 @@ class Animal(metaclass=ABCMeta):
     
     @property
     def is_fierce(self):
-        if (self.size_dict[self.size] >= '1' and self.ani_type == '食肉' and self.character == '凶猛'):
+        if (self.size == '中等' or self.size == '大') and self.ani_type == '食肉' and self.character == '凶猛':
             return True
         else:
             return False
