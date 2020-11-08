@@ -12,6 +12,7 @@ def index(request):
     comments = Douban.objects.all()
     return render(request, 'index.html', locals())
 
+# 登录验证
 def sign_in(request):
     if request.method == 'POST':
         login_form = LoginForm(request.POST)

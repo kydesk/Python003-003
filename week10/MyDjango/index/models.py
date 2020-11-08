@@ -7,7 +7,7 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-
+# 第 06 周作业创建的表
 class Douban(models.Model):
     short = models.CharField(max_length=500, blank=True, null=True)
     rating = models.IntegerField(blank=True, null=True)
@@ -17,6 +17,7 @@ class Douban(models.Model):
         managed = False
         db_table = 'douban'
 
+# 第 10 周作业创建，用于创建后台管理的表
 class Post(models.Model):
     Username = models.CharField(max_length=20, blank=True, null=True)
     Email = models.CharField(max_length=50, blank=True, null=True)
